@@ -1,0 +1,90 @@
+[ 2017-03-01T10:00:31+08:00 ] ::1 /js/jquery-2.1.3.min.js
+ERR: 无法加载控制器:Js
+
+[ 2017-03-01T10:00:31+08:00 ] ::1 /style/dingzhou.css
+ERR: 无法加载控制器:Style
+
+[ 2017-03-01T10:52:07+08:00 ] ::1 /
+ERR: Think\Model:getQuery方法不存在！
+
+[ 2017-03-01T11:07:42+08:00 ] ::1 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: smeta F:\phpsoftware\wampserver\wamp64\www\application\Portal\Controller\AdminPostController.class.php 第 50 行.
+SQL: INSERT INTO `sp_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_category`,`post_title`,`post_keywords`,`post_source`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2017-03-01 11:07:13','1','0','0','0','1234','13432','13432','<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://localhost/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://localhost/data/upload/ueditor/20170301/58b63af59482c.doc\" title=\"高若男1简历.doc\">高若男1简历.doc</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://localhost/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://localhost/data/upload/ueditor/20170301/58b63afb9d8b4.doc\" title=\"高若男1简历.doc\">高若男1简历.doc</a></p><p><br/></p>','2017-03-01 11:07:42','1','{\"thumb\":\"\"}') [ RunTime:0.0010s ]
+SQL: INSERT INTO `sp_term_relationships` (`term_id`,`object_id`) VALUES ('2','12') [ RunTime:0.0000s ]
+
+[ 2017-03-01T11:34:27+08:00 ] ::1 /index.php?g=&m=Portal&a=detail&
+ERR: 无法加载控制器:Portal
+
+[ 2017-03-01T11:34:52+08:00 ] ::1 /index.php?g=&m=Portal&a=detail&
+ERR: 无法加载控制器:Portal
+
+[ 2017-03-01T11:34:54+08:00 ] ::1 /index.php?g=&m=Portal&a=detail&
+ERR: 无法加载控制器:Portal
+
+[ 2017-03-01T15:31:37+08:00 ] ::1 /index.php?g=&m=Index&a=moreInfo&post_author=1&post_category=0
+ERR: 模板不存在:tpl/simplebootx/Portal/Index/moreInfo.html
+
+[ 2017-03-01T15:32:44+08:00 ] ::1 /js/jquery-2.1.3.min.js
+ERR: 无法加载控制器:Js
+
+[ 2017-03-01T15:32:44+08:00 ] ::1 /style/dingzhou.css
+ERR: 无法加载控制器:Style
+
+[ 2017-03-01T15:34:33+08:00 ] ::1 /js/jquery-2.1.3.min.js
+ERR: 无法加载控制器:Js
+
+[ 2017-03-01T15:34:33+08:00 ] ::1 /style/dingzhou.css
+ERR: 无法加载控制器:Style
+
+[ 2017-03-01T15:35:19+08:00 ] ::1 /statics/style/dingzhou.css
+ERR: 无法加载控制器:Statics
+
+[ 2017-03-01T16:03:56+08:00 ] ::1 /index.php?g=&m=Index&a=moreInfo&post_author=1&post_category=0
+ERR: 表达式错误:=
+
+[ 2017-03-01T16:03:58+08:00 ] ::1 /index.php?g=&m=Index&a=moreInfo&post_author=1&post_category=0
+ERR: 表达式错误:=
+
+[ 2017-03-01T16:16:03+08:00 ] ::1 /index.php?g=&m=Index&a=moreInfo&post_author=1&post_category=0
+ERR: 表达式错误:=
+
+[ 2017-03-01T16:16:24+08:00 ] ::1 /index.php?g=&m=Index&a=moreInfo&post_author=1&post_category=0
+ERR: 表达式错误:=
+
+[ 2017-03-01T16:18:59+08:00 ] ::1 /index.php?g=&m=Index&a=moreInfo&post_author=1&post_category=0
+ERR: 表达式错误:=
+
+[ 2017-03-01T16:23:52+08:00 ] ::1 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0010s ]
+
+[ 2017-03-01T16:23:58+08:00 ] ::1 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: smeta F:\phpsoftware\wampserver\wamp64\www\application\Portal\Controller\AdminPostController.class.php 第 50 行.
+SQL: INSERT INTO `sp_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_category`,`post_title`,`post_keywords`,`post_source`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2017-03-01 16:23:32','1','0','0','1','21345','34235','14253','<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://localhost/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://localhost/data/upload/ueditor/20170301/58b685166e2e4.doc\" title=\"高若男1简历.doc\">高若男1简历.doc</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://localhost/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://localhost/data/upload/ueditor/20170301/58b685167a24c.docx\" title=\"高若男1简历.docx\">高若男1简历.docx</a></p><p><br/></p>','2017-03-01 16:23:58','1','{\"thumb\":\"\"}') [ RunTime:0.0000s ]
+SQL: INSERT INTO `sp_term_relationships` (`term_id`,`object_id`) VALUES ('1','13') [ RunTime:0.0000s ]
+

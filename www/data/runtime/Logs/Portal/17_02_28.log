@@ -1,0 +1,20 @@
+[ 2017-02-28T23:12:34+08:00 ] ::1 /index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '2' AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT * FROM sp_auth_access a INNER JOIN sp_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('2') AND b.name IN ('portal/adminpost/edit_post')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sp_posts` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_terms` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_term_relationships` [ RunTime:0.0010s ]
+SQL: DELETE FROM `sp_term_relationships` WHERE `object_id` = 11 AND `term_id` NOT IN ('2') [ RunTime:0.0210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_term_relationships` WHERE `object_id` = 11 AND `term_id` = '2' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sp_term_relationships` SET `status`='1' WHERE `object_id` = 11 AND `term_id` = '2' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: smeta F:\phpsoftware\wampserver\wamp64\www\application\Portal\Controller\AdminPostController.class.php 第 108 行.
+SQL: UPDATE `sp_posts` SET `post_modified`='2017-02-28 17:19:14',`post_status`='1',`istop`='0',`recommended`='0',`post_category`='0',`post_title`='yusuan',`post_keywords`='yusuan',`post_source`='yusuan',`post_content`='<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://localhost/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://localhost/data/upload/ueditor/20170228/58b5935f4c518.doc\" title=\"高若男1简历.doc\">高若男1简历.doc</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://localhost/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://localhost/data/upload/ueditor/20170228/58b5935f4ec28.doc\" title=\"高若男1简历.doc\">高若男1简历.doc</a></p><p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://localhost/statics/js/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"http://localhost/data/upload/ueditor/20170228/58b540a9c4ec8.doc\" title=\"高若男1简历.doc\">高若男1简历.doc</a><br/></p><p><br/></p>',`smeta`='{\"thumb\":\"\"}' WHERE `id` = '11' [ RunTime:0.0000s ]
+
